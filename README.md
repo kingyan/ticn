@@ -16,6 +16,8 @@ cd /root/snap2html
 
 wget https://github.com/ZapperDJ/DiogenesList/archive/master.zip
 
+yum install unzip
+
 unzip master.zip
 
 cd /root/snap2html/DiogenesList-master/

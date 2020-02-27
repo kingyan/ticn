@@ -4,8 +4,6 @@ yum install python-virtualenv
 
 virtualenv env1
 
-virtualenv –python=/usr/local/python-2.7.8/bin/python2.7 env1
-
 cd env1/
 
 source bin/activate

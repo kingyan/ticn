@@ -14,7 +14,7 @@ location ~ /\.env {
 
 -----------------------------------------------------------------------------
 cd /www/wwwroot/xx.com
-git clone https://github.com/xytoki/TCShare.git
+git clone https://github.com/ticn/TCShare.git
 mv TCShare/* ./
 rm -rf TCShare
 

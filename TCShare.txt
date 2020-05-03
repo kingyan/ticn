@@ -10,11 +10,11 @@ location ~ /\.env {
 -------------------------------------------------
 
 *下载源码
-使用命令下载源码并安装依赖，在此之前要先安装 PHP7.3+ 和 composer。
+使用命令下载源码并安装依赖，在此之前要先安装 PHP7.3+ 和 composer install。
 
 -----------------------------------------------------------------------------
 cd /www/wwwroot/xx.com
-git clone https://github.com/ticn/TCShare.git
+git clone https://github.com/kingan/TCShare.git
 mv TCShare/* ./
 rm -rf TCShare
 

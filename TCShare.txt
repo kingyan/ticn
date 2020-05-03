@@ -28,22 +28,15 @@ composer update --lock
 进入网站目录，创建 .env 文件，填入如下内容保存。
 
 ------------------------------------------------------------------------------
-XS_KEY_ct=ctyun 
+XS_KEY_ct=ctyun
+XS_KEY_ct_FD=safebox
+XS_KEY_ct_AK=600102343
+XS_KEY_ct_SK=93c6a3491a5e1d93af0e44b470798148
 
-XS_KEY_ct_FD=safebox 
-
-XS_KEY_ct_AK=600102343 
-
-XS_KEY_ct_SK=93c6a3491a5e1d93af0e44b470798148 
-
-XS_APP_1=/ 
-
-XS_APP_1_KEY=ct 
-
-XS_APP_1_NAME="MARK SHARE" 
-
-XS_APP_1_THEME=mdui 
-
+XS_APP_1=/
+XS_APP_1_KEY=ct
+XS_APP_1_NAME="MARK SHARE"
+XS_APP_1_THEME=mdui
 XS_APP_1_BASE=/
 ---------------------------------------------------------------------------
 

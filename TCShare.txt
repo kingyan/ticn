@@ -1,6 +1,19 @@
 安装步骤:
 *添加站点
-以宝塔为例，首先创建站点绑定域名并设置 DNS 解析，如 xx.com，随后设置伪静态，以 NGINX 为例。
+以宝塔为例，首先创建站点绑定域名并设置 DNS 解析，如 xx.com。
+
+到配置文件把以下代码注释掉，解决列网盘图片 404 的问题。
+
+-------------------------------------------------
+#location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
+#{
+#    expires      30d;
+#    error_log off;
+#    access_log off;
+#}
+-------------------------------------------------
+
+随后设置伪静态，以 NGINX 为例。
 
 -------------------------------------------------
 try_files $uri $uri/ /index.php$is_args$args;
@@ -9,11 +22,13 @@ location ~ /\.env {
 }
 -------------------------------------------------
 
+PHP设置找到禁用函数，移除 putenv，便于后续用 composer 安装依赖。
+
 *下载源码
 使用命令下载源码并安装依赖，在此之前要先安装 PHP7.3+ 和 composer install。
 
 -----------------------------------------------------------------------------
-cd /www/wwwroot/xx.com
+cd /www/wwwroot/dl.kingyan.top
 git clone https://github.com/kingan/TCShare.git
 mv TCShare/* ./
 rm -rf TCShare

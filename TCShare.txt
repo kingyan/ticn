@@ -29,7 +29,7 @@ PHP设置找到禁用函数，移除 putenv，便于后续用 composer 安装依
 
 -----------------------------------------------------------------------------
 cd /www/wwwroot/dl.kingyan.top
-git clone https://github.com/kingan/TCShare.git
+git clone https://github.com/kingyan/TCShare.git
 mv TCShare/* ./
 rm -rf TCShare
 
